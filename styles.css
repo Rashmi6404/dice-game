@@ -1,0 +1,105 @@
+
+body {
+    background: url('./images/bg.jpeg') no-repeat center center/cover; 
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: rgba(151, 144, 144, 0.6); 
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  
+  h1 {
+    margin: 20px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+    font-size: 4rem;
+    color: #f9d342;
+    animation: pop 1s ease-in-out infinite;
+  }
+  
+  
+  @keyframes pop {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  
+  .dice {
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .img1 {
+    width: 80%;
+    transition: transform 0.2s ease;
+  }
+  
+  .img1:hover {
+    transform: rotate(10deg) scale(1.1);
+  }
+
+   
+  .img2 {
+    width: 80%;
+    transition: transform 0.2s ease;
+  }
+  
+  .img2:hover {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  
+  
+  p {
+    font-size: 2rem;
+    color: #f4f4f9;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  }
+  
+  
+  .throw-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, #26f8e3, #f064ff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .throw-button:hover {
+    background: linear-gradient(90deg,  #f064ff, #26f8e3);
+    transform: scale(1.20);
+    color: #02598a;
+  }
+  
+  
+  footer {
+    margin-top: 30px;
+    color: #eeeeee;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+  }
+  
